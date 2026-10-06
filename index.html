@@ -1,1 +1,47 @@
-age = input("What is your age? ")
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoWorld - Environment</title>
+<style>
+body{margin:0;font-family:Arial;background:#eef8f0;color:#16351f}
+.hero{padding:90px 25px;text-align:center;background:linear-gradient(135deg,#087044,#42b96d);color:white}
+h1{font-size:48px;margin:10px 0}.hero p{font-size:20px}
+section{padding:35px 20px;max-width:900px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.card{background:white;padding:22px;border-radius:18px;box-shadow:0 4px 15px #0002}
+.icon{font-size:40px}h2{text-align:center;font-size:32px}
+footer{text-align:center;background:#123b25;color:white;padding:28px}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>🌍 EcoWorld</h1>
+<p>Protect Our Environment • Protect Our Future 🌱</p>
+</div>
+<section>
+<h2>Our Environment</h2>
+<div class="cards">
+<div class="card"><div class="icon">🌳</div><h3>Trees & Forests</h3><p>Trees give us oxygen, shade and homes for wildlife.</p></div>
+<div class="card"><div class="icon">💧</div><h3>Save Water</h3><p>Use water carefully and keep rivers and lakes clean.</p></div>
+<div class="card"><div class="icon">♻️</div><h3>Recycle</h3><p>Reduce waste, reuse useful things and recycle materials.</p></div>
+<div class="card"><div class="icon">🌫️</div><h3>Stop Pollution</h3><p>Keep our air, water and land clean by reducing pollution.</p></div>
+</div>
+</section>
+<section>
+<h2>How We Can Help 🌱</h2>
+<div class="card">
+<p>✅ Plant trees</p><p>✅ Save water</p><p>✅ Avoid littering</p><p>✅ Reduce plastic</p><p>✅ Protect animals and plants</p>
+</div>
+</section>
+<footer>
+Made for a greener future 🌍<br><br>
+<strong>Created by Deeptanu</strong>
+</footer>
+</body>
+</html>"""
+
+path = Path("/mnt/data/EcoWorld_by_Deeptanu.html")
+path.write_text(html, encoding="utf-8")
+print("Website recreated successfully.")
+print(path)
