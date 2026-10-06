@@ -53,10 +53,22 @@ footer{padding:35px 6%;border-top:1px solid var(--line);display:flex;justify-con
 @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px}.cards{grid-template-columns:repeat(2,1fr)}.help{grid-template-columns:1fr;padding:32px}nav .links{display:none}}
 @media(max-width:520px){h1{font-size:48px}.cards{grid-template-columns:1fr}section{padding:60px 5%}.visual{min-height:250px}.contact{padding:30px 20px}footer{flex-direction:column}}
 </style>
+<style id="mobile-nav-fix">
+@media(max-width:850px){
+nav{position:sticky;top:0;flex-wrap:wrap}
+nav .menu-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:40px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font-size:22px;cursor:pointer}
+nav .links{display:none;width:100%;flex-direction:column;gap:0;margin-top:14px;padding:8px 0;border-top:1px solid var(--line)}
+nav .links.open{display:flex}
+nav .links a{padding:13px 4px;border-bottom:1px solid var(--line)}
+nav .links a:last-child{border-bottom:0}
+}
+@media(min-width:851px){nav .menu-toggle{display:none}}
+</style>
 </head>
 <body>
 <nav>
 <a class="logo" href="index.html">Eco<span>World</span></a>
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 <div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="initiatives.html">Initiatives</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div>
 </nav>
 
@@ -110,5 +122,13 @@ footer{padding:35px 6%;border-top:1px solid var(--line);display:flex;justify-con
 <div>EcoWorld · Building a greener future, one action at a time.</div>
 <div>Created by Deeptanu</div>
 </footer>
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const navLinks=document.querySelector('nav .links');
+if(menuButton&&navLinks){
+ menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',open);});
+ navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+}
+</script>
 </body>
 </html>
