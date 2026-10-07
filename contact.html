@@ -14,35 +14,24 @@ nav .links a{padding:13px 4px;border-bottom:1px solid var(--line)}
 nav .links a:last-child{border-bottom:0}
 }
 @media(min-width:851px){nav .menu-toggle{display:none}}
-</style><style id="intentionally-ugly-theme">
-:root{--ink:#16005c!important;--muted:#4b003f!important;--green:#ff1493!important;--green2:#00e5ff!important;--cream:#fff200!important;--white:#ff7a00!important;--line:#000!important}
-html{scroll-behavior:auto!important}
-body{background:#fff200!important;color:#16005c!important;font-family:"Comic Sans MS","Courier New",cursive!important}
-nav{background:#ff1493!important;border:5px dashed #000!important;box-shadow:12px 12px 0 #00e5ff!important;backdrop-filter:none!important}
-.logo{font-family:"Comic Sans MS",cursive!important;font-size:30px!important;text-shadow:4px 4px 0 #00e5ff!important;transform:rotate(-2deg)}
-.logo span{color:#39ff14!important}
-nav .links a{color:#000!important;text-decoration:underline wavy!important;text-decoration-thickness:3px!important}
-nav .links a:hover{color:#fff!important;background:#16005c!important}
-.menu-toggle{background:#00e5ff!important;border:5px solid #000!important;border-radius:0!important;box-shadow:5px 5px 0 #ff1493!important}
-.hero{background:repeating-linear-gradient(45deg,#fff200 0 18px,#ff7a00 18px 36px)!important}
-h1,h2,h3{font-family:"Comic Sans MS",cursive!important;letter-spacing:0!important;text-transform:uppercase!important;text-shadow:3px 3px 0 #00e5ff!important}
-.eyebrow{background:#000!important;color:#39ff14!important;padding:5px 9px!important;display:inline-block!important;border:3px solid #ff1493!important;transform:rotate(2deg)!important}
-.btn,.whatsapp{border-radius:0!important;border:5px solid #000!important;box-shadow:7px 7px 0 #16005c!important;font-family:"Comic Sans MS",cursive!important}
-.primary{background:#39ff14!important;color:#000!important}
-.secondary{background:#00e5ff!important;color:#000!important}
-.visual{border-radius:0!important;background:linear-gradient(135deg,#ff1493,#00e5ff,#39ff14,#ff7a00)!important;border:8px solid #000!important;box-shadow:15px 15px 0 #16005c!important;transform:rotate(2deg)!important}
-.visualText{font-family:"Comic Sans MS",cursive!important;background:#fff200!important;color:#ff1493!important;border:5px dotted #000!important;padding:10px!important}
-.card,.panel,.box,.resource,.item{border:5px solid #000!important;border-radius:0!important;background:#ff7a00!important;box-shadow:8px 8px 0 #00e5ff!important}
-.card:nth-child(even),.panel:nth-child(even),.item:nth-child(even),.resource:nth-child(even){background:#39ff14!important;transform:rotate(-1deg)!important}
-.card:nth-child(3n),.panel:nth-child(3n){background:#00e5ff!important;transform:rotate(1deg)!important}
-.card:hover,.panel:hover,.item:hover,.resource:hover{transform:translate(4px,4px)!important;box-shadow:2px 2px 0 #000!important}
-.icon{font-size:48px!important;filter:saturate(2)!important}
-.tag,.label{border:3px solid #000!important;border-radius:0!important;background:#ff1493!important;color:#fff!important;padding:7px!important}
-.help{border-radius:0!important;border:8px solid #000!important;background:#16005c!important;box-shadow:15px 15px 0 #ff1493!important}
-.check{border:4px dotted #39ff14!important;border-radius:0!important;background:#ff1493!important;color:#fff!important}
-.contact{border-radius:0!important;border:7px double #000!important;background:#00e5ff!important;box-shadow:10px 10px 0 #ff1493!important}
-footer{background:#000!important;color:#39ff14!important;border-top:7px solid #ff1493!important;font-family:"Courier New",monospace!important}
-a{transition:none!important}
+</style><style id="intentionally-terrible-theme">
+html,body{cursor:crosshair!important}
+body{font-family:"Comic Sans MS","Papyrus","Courier New",cursive!important;background:#7bff00!important;color:#18004d!important;letter-spacing:1px!important}
+body *{border-radius:0!important;transition:none!important}
+h1{font-family:"Papyrus","Comic Sans MS",fantasy!important;font-size:clamp(2.4rem,9vw,6rem)!important;color:#ff00aa!important;text-shadow:4px 4px #00ffff,-3px -3px #ffff00,8px 1px #000!important;transform:rotate(-2deg) skewX(-5deg)!important}
+h2{font-family:"Courier New",monospace!important;color:#0000ff!important;background:#ff6b00!important;border:7px dotted #ff00ff!important;text-decoration:underline wavy #00ff00!important;transform:rotate(1.5deg)!important}
+h3{font-family:"Times New Roman",serif!important;color:#ff003c!important;background:#00ffff!important;border:5px double #111!important}
+p,li{font-family:"Comic Sans MS",cursive!important}
+nav,header{background:repeating-linear-gradient(45deg,#ff00ff 0 12px,#00ffff 12px 24px,#ffff00 24px 36px)!important;border:8px dashed #000!important;box-shadow:12px 12px 0 #ff0000,-8px -8px 0 #0000ff!important}
+a{font-family:"Papyrus","Comic Sans MS",fantasy!important;color:#000!important;background:#fffb00!important;border:5px solid #ff1493!important;padding:3px 7px!important;text-decoration:underline!important;box-shadow:5px 5px 0 #00ff00!important}
+a:hover{background:#00ff00!important;color:#ff00ff!important;transform:rotate(8deg) scale(1.12)!important}
+button{font-family:"Courier New",monospace!important;font-weight:900!important;font-size:1rem!important;background:#ff1493!important;color:#ffff00!important;border:6px outset #00ff00!important;box-shadow:7px 7px 0 #000!important;text-transform:uppercase!important}
+button:hover{background:#00ffff!important;color:#ff0000!important;transform:rotate(-5deg)!important}
+section,article,.card,.initiative,.resource,.content,.container{background:linear-gradient(117deg,#fff 0 18%,#ff00ff 18% 34%,#00ffff 34% 51%,#ffff00 51% 68%,#ff7300 68% 84%,#39ff14 84%)!important;border:9px groove #000!important;box-shadow:14px 14px 0 #ff0000,-10px -10px 0 #0000ff,5px 5px 0 #00ff00!important}
+img{border:10px ridge #ff00ff!important;filter:saturate(2.5) contrast(1.5)!important;transform:rotate(3deg)!important}
+footer{background:#000!important;color:#39ff14!important;border-top:12px dotted #ff00ff!important;font-family:"Courier New",monospace!important}
+input,textarea,select{font-family:"Papyrus",cursive!important;background:#ffff00!important;color:#ff0000!important;border:6px dashed #0000ff!important}
+*{text-shadow:1px 1px #fff!important}
 </style></head><body><nav><a class="logo" href="index.html">Eco<span>World</span></a><button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 <div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="initiatives.html">Initiatives</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div></nav>
 <main><div><div class="eyebrow">Contact EcoWorld</div><h1>Have an idea worth sharing?</h1><p class="intro">Questions, environmental ideas, local initiatives or collaboration opportunities are welcome.</p></div>
